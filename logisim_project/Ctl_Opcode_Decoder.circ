@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.5.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -9,9 +9,11 @@
       <a name="incoming" val="1"/>
     </tool>
     <tool name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="radix" val="10unsigned"/>
     </tool>
@@ -47,54 +49,10 @@
     <tool name="OR Gate">
       <a name="size" val="30"/>
     </tool>
-    <tool name="PLA">
-      <a name="table" val=""/>
-    </tool>
   </lib>
-  <lib desc="#Plexers" name="2">
-    <tool name="Multiplexer">
-      <a name="enable" val="false"/>
-    </tool>
-    <tool name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </tool>
-  </lib>
+  <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4">
-    <tool name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="T Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="J-K Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="S-R Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Counter">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Shift Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Random">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="RAM">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="ROM">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="contents">addr/data: 8 8
-0
-</a>
-    </tool>
-  </lib>
+  <lib desc="#Memory" name="4"/>
   <lib desc="#I/O" name="5"/>
   <lib desc="#HDL-IP" name="6">
     <tool name="VHDL Entity">
@@ -158,15 +116,9 @@ end TCL_Generic;
 </a>
     </tool>
   </lib>
-  <lib desc="#Base" name="8">
-    <tool name="Text Tool">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="text" val=""/>
-      <a name="valign" val="base"/>
-    </tool>
-  </lib>
+  <lib desc="#Base" name="8"/>
   <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="file#SR_OPDECODE.circ" name="10"/>
   <main name="Opcode_Decoder"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -181,18 +133,10 @@ end TCL_Generic;
   <toolbar>
     <tool lib="8" name="Poke Tool"/>
     <tool lib="8" name="Edit Tool"/>
-    <tool lib="8" name="Text Tool">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="text" val=""/>
-      <a name="valign" val="base"/>
-    </tool>
+    <tool lib="8" name="Text Tool"/>
     <sep/>
+    <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </tool>
-    <tool lib="0" name="Pin">
-      <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </tool>
@@ -203,55 +147,75 @@ end TCL_Generic;
   <circuit name="Opcode_Decoder">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Opcode_Decoder"/>
-    <a name="circuitnamedboxfixedsize" val="false"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
-    <comp lib="0" loc="(240,140)" name="Pin">
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(350,150)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Shift"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,220)" name="Pin">
+    <comp lib="0" loc="(380,220)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Data_Processing"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,310)" name="Pin">
+    <comp lib="0" loc="(380,270)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Load_Store"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,390)" name="Pin">
+    <comp lib="0" loc="(380,320)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="SP_Address"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,510)" name="Pin">
+    <comp lib="0" loc="(380,360)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Conditional"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(80,80)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="Opcode"/>
       <a name="width" val="6"/>
     </comp>
-    <comp lib="8" loc="(413,150)" name="Text">
+    <comp lib="10" loc="(280,200)" name="SR_OCDECODE"/>
+    <comp lib="8" loc="(500,159)" name="Text">
       <a name="text" val="Shift, add, sub, mov"/>
     </comp>
-    <comp lib="8" loc="(431,319)" name="Text">
+    <comp lib="8" loc="(551,279)" name="Text">
       <a name="text" val="Load/Store"/>
     </comp>
-    <comp lib="8" loc="(436,399)" name="Text">
+    <comp lib="8" loc="(552,328)" name="Text">
       <a name="text" val="SP Address"/>
     </comp>
-    <comp lib="8" loc="(475,519)" name="Text">
+    <comp lib="8" loc="(576,370)" name="Text">
       <a name="text" val="Conditional branch"/>
     </comp>
-    <comp lib="8" loc="(505,230)" name="Text">
+    <comp lib="8" loc="(620,229)" name="Text">
       <a name="text" val="Data Processing"/>
     </comp>
+    <wire from="(280,200)" to="(310,200)"/>
+    <wire from="(280,220)" to="(380,220)"/>
+    <wire from="(280,240)" to="(350,240)"/>
+    <wire from="(280,260)" to="(340,260)"/>
+    <wire from="(280,280)" to="(330,280)"/>
+    <wire from="(30,160)" to="(30,200)"/>
+    <wire from="(30,160)" to="(80,160)"/>
+    <wire from="(30,200)" to="(60,200)"/>
+    <wire from="(310,150)" to="(310,200)"/>
+    <wire from="(310,150)" to="(350,150)"/>
+    <wire from="(330,280)" to="(330,360)"/>
+    <wire from="(330,360)" to="(380,360)"/>
+    <wire from="(340,260)" to="(340,320)"/>
+    <wire from="(340,320)" to="(380,320)"/>
+    <wire from="(350,240)" to="(350,270)"/>
+    <wire from="(350,270)" to="(380,270)"/>
+    <wire from="(80,80)" to="(80,160)"/>
   </circuit>
 </project>
