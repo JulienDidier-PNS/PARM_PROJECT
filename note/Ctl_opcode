@@ -1,0 +1,16 @@
+﻿### Cpt_decoder
+   ---------------------|
+
+Cette partie là est la partie que toutes les instructions AND (register) auront,
+donc dans le decoder, on check cette partie là, s’il y as 000010 alors c’est ça..
+
+
+Donc on a généré la table de vérité de tous les jeux d’instructions possibles et en fonction du opcode sur 6 bits, alors ça va rediriger vers l’opération :
+- Shif
+- Data_processing
+- Load_Store
+- SP_Adress
+- Conditional
+
+--
+
