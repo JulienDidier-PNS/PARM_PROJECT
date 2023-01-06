@@ -1,0 +1,28 @@
+### Registre
+
+## Partie écriture
+
+Le décodeur a une largeur de select égale à 3 car regDest contient 3 bits qui vont varier pour accéder aux 8 registres.
+
+la sortie du decodeur permet de désigner sur quelle registre écrire.
+
+Le regitre : 
+- D : l'entrée des données
+- WE : activation ou non du registre
+- > : clock
+- R : reset des registres
+- Q : écriture dans le registre
+
+## Partie Lecture
+
+On procède de la même manière que la partie écriture mais en inverse :
+
+En effet on dispose de RegA et RegB en guise de RegDest qui vont aller dans 2 décodeurs pour déterminer quelle registre lire
+
+Le registre :
+- D : sera relié au registre
+- we : activation ou non du registre
+- R : reset des registres
+- Q : la donnée en sortie est envoyée au Reg A out ou Reg B out 
+
+
