@@ -319,7 +319,7 @@ end TCL_Generic;
     <comp lib="0" loc="(290,190)" name="Tunnel">
       <a name="label" val="L_R"/>
     </comp>
-    <comp lib="0" loc="(370,330)" name="Tunnel">
+    <comp lib="0" loc="(380,330)" name="Tunnel">
       <a name="label" val="RAM_Addr"/>
       <a name="width" val="32"/>
     </comp>
@@ -414,7 +414,7 @@ end TCL_Generic;
     <comp lib="4" loc="(970,580)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="8" loc="(987,485)" name="Text">
+    <comp lib="8" loc="(1012,461)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Delay load and hold PC for 1 cycle for the RAM to send out requested data "/>
     </comp>
@@ -436,7 +436,7 @@ end TCL_Generic;
     <wire from="(280,160)" to="(290,160)"/>
     <wire from="(290,280)" to="(290,320)"/>
     <wire from="(290,320)" to="(310,320)"/>
-    <wire from="(350,330)" to="(370,330)"/>
+    <wire from="(350,330)" to="(380,330)"/>
     <wire from="(410,60)" to="(410,70)"/>
     <wire from="(410,70)" to="(430,70)"/>
     <wire from="(860,110)" to="(960,110)"/>
