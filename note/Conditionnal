@@ -1,0 +1,6 @@
+13e bit, savoir si on est dans un branchement conditionnel ou pas
+on fait un et logique entre enable et verified et si enable est à 1 
+ce n'est pas une instruction load store et on renvoie 0 en offeset car on a 
+pas besoin de faire un saut de mémoire
+
+Si c'est 0, alors on fait le saut de la mémoire
