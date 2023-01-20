@@ -166,7 +166,6 @@ end TCL_Generic;
     </tool>
   </lib>
   <lib desc="file#Controller.circ" name="14"/>
-  <lib desc="file#SR_OPDECODE.circ" name="15"/>
   <main name="Facade"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
